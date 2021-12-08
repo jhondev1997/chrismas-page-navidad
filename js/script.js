@@ -1,13 +1,16 @@
-let searchBtn = document.querySelector('#search-btn');
-let searchForm = document.querySelector(".header .search-form"),
 
-busqueda = document.querySelector('[busqueda]');
+let busqueda = document.querySelector('[busqueda]');
+let formBusqueda = document.querySelector('[form-busqueda]');
 
-
-searchBtn.onclick= ()=>{
-    searchBtn.classList.toggle('fa-times');
-    searchForm.classList.toggle('active');
+busqueda.onclick=()=>{
+    busqueda.classList.toggle('fa-times');
+    formBusqueda.classList.toggle('active');
 }
+
+// searchBtn.onclick= ()=>{
+//     searchBtn.classList.toggle('fa-times');
+//     searchForm.classList.toggle('active');
+// }
 
 // busqueda.forEach(button =>{
 //     button.addEventListener('click', ()=>{
