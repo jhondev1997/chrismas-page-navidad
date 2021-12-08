@@ -1,4 +1,4 @@
-let searchBtn = document.getElementById('#search-btn');
+let searchBtn = document.querySelector('#search-btn');
 let searchForm = document.querySelector(".header .search-form"),
 
 busqueda = document.querySelector('[busqueda]');
