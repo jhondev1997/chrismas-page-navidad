@@ -107,6 +107,10 @@ header .navbar a{
     clip-path: polygon(0 0,100% 0, 0 0);
 }
 
+.search-form .active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
 .search-form input{
     width: 100%;
     font-size: 1.6rem;
