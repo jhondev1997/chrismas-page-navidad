@@ -1,5 +1,6 @@
+// !Ni idea de por que no me funcionaban las lineas de abajo, cargue con otra forma y volvi y funcionó
 let busqueda = document.querySelector("#search-btn");
-let formBusqueda = document.querySelector(".search-form")
+let formBusqueda = document.querySelector(".search-form");
 
 
 // let busqueda = document.querySelector('[busqueda]');
@@ -12,8 +13,8 @@ busqueda.onclick=()=>{
     navbar.classList.remove('active2');
 }
 
-let menu = document.querySelector('[menu]');
-let navbar = document.querySelector('[navbar]');
+let menu = document.querySelector("#menu-btn");
+let navbar = document.querySelector(".navbar");
 
 menu.onclick=()=>{
     
