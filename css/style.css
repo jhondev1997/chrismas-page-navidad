@@ -107,7 +107,7 @@ header .navbar a{
     clip-path: polygon(0 0,100% 0, 0 0);
 }
 
-.active{
+.active1{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
@@ -129,6 +129,52 @@ header .navbar a{
     color: #e60000;
 }
 
+/* *Termina el header */
+
+/* *media queries */
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 1.5rem 2rem;
+    }
+}
+
+@media (max-width:768px){
+
+    .icons #menu-btn{
+        display: inline-block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 99%; left: 0; right: 0;
+        background: #fff;
+        border-top: .2rem solid #000;
+        clip-path: polygon(0 0,100% 0, 0 0);
+    }
+    
+    header .active2 {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 2rem;
+    }
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+}
 /* $red: #e60000;
 $black: #222;
 $white:#fff;
@@ -136,4 +182,3 @@ $light -color: #666;
 $light -bg: #eee;
 $border: .2rem solid $black;
 $box-shadow:0 .5rem 1rem rgb(0,0,0,.1) ; */
-/* *Termina el header */
