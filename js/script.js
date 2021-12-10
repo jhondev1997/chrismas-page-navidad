@@ -1,4 +1,4 @@
-// !Ni idea de por que no me funcionaban las lineas de abajo, cargue con otra forma y volvi y funcionó
+// !Ni idea de por que no me funcionaban las lineas de abajo, cargue con otra forma, volvi y funcionó
 let busqueda = document.querySelector("#search-btn");
 let formBusqueda = document.querySelector(".search-form");
 
