@@ -2,7 +2,6 @@
 let busqueda = document.querySelector("#search-btn");
 let formBusqueda = document.querySelector(".search-form");
 
-
 // let busqueda = document.querySelector('[busqueda]');
 // let formBusqueda = document.querySelector('[form-busqueda]');
 
@@ -49,4 +48,19 @@ window.onscroll = ()=>{
     formBusqueda.classList.remove('active1');
     menu.classList.remove('fa-times');
     navbar.classList.remove('active2');
+}
+
+let slides= document.querySelectorAll('.home .slide');
+let index =0;
+
+function next(){
+    slides[index].classList.remove('active');
+    index = (index + 1) % slides.lenght;
+    slides[index].classList.add('active');
+}
+
+function prev(){
+    slides[index].classList.remove('active');
+    index = (index - 1 + slides.lenght) % slides.lenght;
+    slides[index].classList.add('active');
 }

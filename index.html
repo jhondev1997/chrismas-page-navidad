@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina Navideña Amateur</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
     <!-- El javascript lo pongo aqui, pero puede que no lo corra en el head -->
     <!-- font awesome con link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -38,6 +38,29 @@
         </form>
     </header>
     <!-- Fin header  -->
+
+    <!-- Seccion home -->
+    <section class="home" id="home">
+        <div class="slide active" style="background: url(img/home-bg-1.png) no-repeat; background-size: cover; background-position: center;">
+            <div class="content">
+                <span>feliz navidad</span>
+                <h3>Hasta 60% de descuento</h3>
+                <a href="#" class="btn">compre ahora</a>
+            </div>
+        </div>
+
+        <div class="slide" style="background: url(img/home-bg-2.png) no-repeat; background-size: cover; background-position: center;">
+            <div class="content">
+                <span>jóu jóu jóu</span>
+                <h3>feliz dia</h3>
+                <a href="#" class="btn">compre ahora</a>
+            </div>
+        </div>
+
+        <div id="next-slide" onclick="next()" class="fas fa-angle-right"></div>
+        <div id="prev-slide" onclick="prev()" class="fas fa-angle-left"></div>
+    </section>
+    <!-- fin seccion home -->
 <!-- A las finales agregue el script en el body -->
 <script src="js/script.js" ></script>
 </body>
