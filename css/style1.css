@@ -312,6 +312,56 @@ section {
           flex: 1 1 42rem;
 }
 
+.about .content .box {
+  padding: 3rem;
+  background: #eee;
+}
+
+.about .content .box h3 {
+  font-size: 2.5rem;
+  color: #222;
+}
+
+.about .content .box p {
+  padding: 1rem 0;
+  line-height: 2;
+  list-style: #666;
+  font-size: 1.4rem;
+}
+
+.about .content .icons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.about .content .icons-container .icons {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 16rem;
+          flex: 1 1 16rem;
+  background: #eee;
+  padding: 2rem;
+  text-align: center;
+}
+
+.about .content .icons-container .icons i {
+  color: #e60000;
+  margin-bottom: 1rem;
+  font-size: 5rem;
+}
+
+.about .content .icons-container .icons p {
+  font-size: 1.4rem;
+  color: #666;
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;

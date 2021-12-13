@@ -18,6 +18,12 @@ $light-bg: #eee;
 $border: .2rem solid $black;
 $box-shadow:0 .5rem 1rem rgba(0,0,0,.1) ; 
 
+@mixin grid($val) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+    gap: 2rem;
+}
+
 html{
     font-size: 62.5%;
     overflow-x: hidden;
@@ -220,6 +226,96 @@ section{
 
     #prev-slide{
         right: 8rem;
+    }
+}
+
+.category{
+    .box-container{
+        @include grid(16rem);
+
+        .box{
+            text-align: center;
+
+            &:hover h3{
+                color: $red;
+            }
+            
+            img{
+                height: 14rem;
+                margin-bottom: 1rem;
+            }
+
+            h3{
+                font-size: 1.7rem;
+                color: $black;
+                font-weight: normal;
+            }
+        }
+    }
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    .image{
+        flex: 1 1 42rem;
+        padding-bottom: 5rem;
+        padding-right: 5rem;
+
+        img{
+            width: 100%;
+            box-shadow: 4rem 4rem 0 $light-bg;
+        }
+    }
+
+    .content{
+        flex: 1 1 42rem;
+
+        .box{
+            padding: 3rem;
+            background: $light-bg;
+
+            h3{
+                font-size: 2.5rem;
+                color: $black;
+            }
+
+            p{
+                padding: 1rem 0;
+                line-height: 2;
+                list-style: $light-color;
+                font-size: 1.4rem;
+            }
+        }
+
+        .icons-container{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-end;
+            gap:2rem;
+            margin-top: 2rem;
+
+            .icons{
+                flex:1 1 16rem;
+                background: $light-bg;
+                padding: 2rem;
+                text-align: center;
+
+                i{
+                    color: $red;
+                    margin-bottom: 1rem;
+                    font-size: 5rem;
+                }
+
+                p{
+                    font-size: 1.4rem;
+                    color: $light-color;
+                }
+            }
+        }
     }
 }
 
