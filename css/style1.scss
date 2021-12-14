@@ -337,6 +337,16 @@ section{
         background: $white;
         border:$border;
         box-shadow: $box-shadow;
+
+        &:hover .image{
+            img{
+                transform: scale(1.1);
+            }
+
+            .icons{
+                transform: translateX(0rem);
+            }
+        }
   
   
         .image{
@@ -369,6 +379,29 @@ section{
               }
             }
           }
+        }
+
+        .content{
+            padding: 2rem;
+
+            h3{
+                font-size: 2rem;
+                color: $black;
+                padding-bottom: .5rem;
+                font-weight: normal;
+            }
+
+            .price{
+                font-size: 2rem;
+                font-weight: bolder;
+                color: $red;
+                
+                span{
+                    font-size: 1.5rem;
+                    color: $light-color;
+                    text-decoration: line-through;
+                }
+            }
         }
   
       }
