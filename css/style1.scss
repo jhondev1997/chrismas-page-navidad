@@ -497,6 +497,42 @@ section{
     }
 }
 
+.message{
+    background: url(../img/message-bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    form{
+        margin: 2rem auto;
+        background: $white;
+        text-align: center;
+        max-width: 40rem;
+        box-shadow: $box-shadow;
+        padding: 2rem;
+
+        h3{
+            font-size: 3rem;
+            color: $black;
+        }
+
+        .box{
+            width: 100%;
+            padding: 1.5rem 0;
+            margin: 7rem 0;
+            font-size: 1.6rem;
+            color: $light-color;
+            text-decoration: none;
+            border-bottom: $border;
+        }
+
+        textarea{
+            height: 15rem;
+        }
+    }
+}
+
+
 // *media queries
 
 @media (max-width:991px){
