@@ -491,6 +491,82 @@ section {
   line-height: 2;
 }
 
+.gallery .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(31rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  gap: 2rem;
+}
+
+.gallery .box-container .box {
+  height: 25rem;
+  overflow: hidden;
+  position: relative;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.gallery .box-container .box:hover .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gallery .box-container .box img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gallery .box-container .box .content {
+  background: rgba(255, 255, 255, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+  border: 0.2rem solid #222;
+  display: none;
+}
+
+.gallery .box-container .box .content h3 {
+  font-size: 2rem;
+  color: #222;
+  -webkit-animation: fadeIn .2s linear backwards;
+          animation: fadeIn .2s linear backwards;
+}
+
+.gallery .box-container .box .content p {
+  font-size: 1.4rem;
+  color: #222;
+  padding: 1rem 0;
+  line-height: 2;
+  -webkit-animation: fadeIn .2s linear backwards .4s;
+          animation: fadeIn .2s linear backwards .4s;
+}
+
+.gallery .box-container .box .content .btn {
+  -webkit-animation: fadeIn .2s linear backwards .6s;
+          animation: fadeIn .2s linear backwards .6s;
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
