@@ -9,7 +9,7 @@ busqueda.onclick=()=>{
     busqueda.classList.toggle('fa-times');
     formBusqueda.classList.toggle('active1');
     menu.classList.remove('fa-times');
-    navbar.classList.remove('active2');
+    navbar.classList.remove('active');
 }
 
 let menu = document.querySelector("#menu-btn");
@@ -20,7 +20,7 @@ menu.onclick=()=>{
     busqueda.classList.remove('fa-times');
     formBusqueda.classList.remove('active1');
     menu.classList.toggle('fa-times');
-    navbar.classList.toggle('active2');
+    navbar.classList.toggle('active');
 }
 // searchBtn.onclick= ()=>{
 //     searchBtn.classList.toggle('fa-times');
@@ -47,7 +47,7 @@ window.onscroll = ()=>{
     busqueda.classList.remove('fa-times');
     formBusqueda.classList.remove('active1');
     menu.classList.remove('fa-times');
-    navbar.classList.remove('active2');
+    navbar.classList.remove('active');
 }
 
 let slides = document.querySelectorAll('.home .slide');

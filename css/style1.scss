@@ -326,6 +326,103 @@ section{
     }
 }
 
+.shop{
+    background: $light-bg;
+  
+    .box-container{
+      @include grid(31rem);
+  
+      .box{
+        text-align: center;
+        background: $white;
+        border:$border;
+        box-shadow: $box-shadow;
+  
+  
+        .image{
+          position: relative;
+          overflow:hidden;
+  
+          img{
+            height: 25rem;
+          }
+  
+          .icons{
+            position: absolute;
+            top:1rem; left:2rem;
+            transform: translateX(-10rem);
+  
+            a{
+              display: block;
+              height: 5rem;
+              width: 5rem;
+              line-height: 4.5rem;
+              font-size: 1.7rem;
+              color:$black;
+              border:$border;
+              box-shadow: $box-shadow;
+              margin-top: 1rem;
+  
+              &:hover{
+                color:$white;
+                background: $red;
+              }
+            }
+          }
+        }
+  
+      }
+    }
+}
+
+// *media queries
+
+@media (max-width:991px){
+
+    html{
+      font-size: 55%;
+    }
+  
+    .header{
+      padding:1.5rem 2rem;
+    }
+  
+    section{
+      padding:3rem 2rem;
+    }
+  
+  }
+  
+  @media (max-width:768px){
+  
+    .header{
+  
+      #menu-btn{
+        display: inline-block;
+      }
+  
+      .navbar{
+        position: absolute;
+        top:99%; left:0; right:0;
+        background: $white;
+        border-top: $border;
+        border-bottom: $border;
+        padding:0 2rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  
+        &.active{
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+  
+        a{
+          display: block;
+          font-size: 2rem;
+          margin:3rem 1rem;
+        }
+      }
+    }
+  
+  }
 
 
 @media (max-width:450px){
