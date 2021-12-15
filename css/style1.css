@@ -572,6 +572,7 @@ section {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  padding: 3rem 2rem;
 }
 
 .message form {
@@ -592,15 +593,20 @@ section {
 .message form .box {
   width: 100%;
   padding: 1.5rem 0;
-  margin: 7rem 0;
+  margin: .7rem 0;
   font-size: 1.6rem;
   color: #666;
   text-decoration: none;
   border-bottom: 0.2rem solid #222;
 }
 
+.message form .box:focus {
+  border-color: #e60000;
+}
+
 .message form textarea {
   height: 15rem;
+  resize: none;
 }
 
 @media (max-width: 991px) {
