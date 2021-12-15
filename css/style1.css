@@ -609,6 +609,100 @@ section {
   resize: none;
 }
 
+.blogs .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(31rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  gap: 2rem;
+}
+
+.blogs .box-container .box {
+  border: 0.2rem solid #222;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.blogs .box-container .box:hover .image img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.blogs .box-container .box .image {
+  height: 30rem;
+  width: 100%;
+  border-bottom: 0.2rem solid #222;
+  overflow: hidden;
+}
+
+.blogs .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blogs .box-container .box .content {
+  padding: 2rem;
+  position: relative;
+}
+
+.blogs .box-container .box .content .date {
+  position: absolute;
+  top: -4rem;
+  right: 3rem;
+  height: 8rem;
+  width: 8rem;
+  border: 0.5rem solid #fff;
+  border-radius: 50%;
+  background: #e60000;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.blogs .box-container .box .content .date h3 {
+  font-size: 2.7rem;
+  line-height: 1;
+  color: #fff;
+}
+
+.blogs .box-container .box .content .date span {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.blogs .box-container .box .content .user {
+  display: block;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.blogs .box-container .box .content .user i {
+  padding-right: .5rem;
+  color: #e60000;
+}
+
+.blogs .box-container .box .content .user:hover {
+  color: #e60000;
+}
+
+.blogs .box-container .box .content .title {
+  font-size: 2rem;
+  color: #222;
+}
+
+.blogs .box-container .box .content .title:hover {
+  color: #e60000;
+}
+
+.blogs .box-container .box .content p {
+  padding: 1rem 0;
+  line-height: 2;
+  color: #666;
+  font-size: 1.4rem;
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
