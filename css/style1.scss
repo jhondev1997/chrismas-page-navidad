@@ -677,7 +677,7 @@ section{
                     color: $red;
                 }
 
-                :hover{
+                &:hover{
                     color: $red;
                     i{
                         padding-right: 2rem;
@@ -687,24 +687,59 @@ section{
 
             .share{
                 margin-top: 2rem;
-            }
 
-            a{
-                height: 4.5rem;
-                width: 4.5rem;
-                line-height: 4.5rem;
-                font-size: 1.7rem;
-                border-radius: .5rem;
-                background: $light-bg;
-                text-align: center;
-                color: $black;
-                margin-right: .5rem;
-
-                &:hover{
-                    color: $white;
-                    background: $red;
+                a{
+                    height: 4.5rem;
+                    width: 4.5rem;
+                    line-height: 4.5rem;
+                    font-size: 1.7rem;
+                    border-radius: .5rem;
+                    background: $light-bg;
+                    text-align: center;
+                    color: $black;
+                    margin-right: .5rem;
+    
+                    &:hover{
+                        color: $white;
+                        background: $red;
+                    }
                 }
             }
+
+            p{
+                padding: 1rem 0;
+                font-size: 1.7rem;
+                color: $light-color;
+                text-transform: none;
+
+            }
+
+            form{
+
+                .email{
+                    border: $border;
+                    width: 100%;
+                    padding: 1.2rem 1.4rem;
+                    text-decoration: none;
+                    color: $light-color;
+                    margin: 1rem 0;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+
+    .credit{
+        text-align: center;
+        padding: 1rem;
+        padding-top: 1rem;
+        margin-top: 3rem;
+        font-size: 2rem;
+        border-top: $border;
+        color: $light-color;
+
+        span{
+            color: $red;
         }
     }
 }
