@@ -22,6 +22,7 @@ menu.onclick=()=>{
     menu.classList.toggle('fa-times');
     navbar.classList.toggle('active');
 }
+
 // searchBtn.onclick= ()=>{
 //     searchBtn.classList.toggle('fa-times');
 //     searchForm.classList.toggle('active');
