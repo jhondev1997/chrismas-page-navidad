@@ -703,6 +703,37 @@ section {
   font-size: 1.4rem;
 }
 
+.service {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(31rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  gap: 2rem;
+  background: #e60000;
+}
+
+.service .box {
+  text-align: center;
+  padding: 2rem;
+}
+
+.service .box img {
+  height: 10rem;
+}
+
+.service .box h3 {
+  padding-top: 1rem;
+  padding-bottom: .5rem;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.service .box p {
+  line-height: 2;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
